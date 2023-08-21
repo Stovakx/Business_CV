@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root{
+    --backgroundColor: #FFFFFF;
+    --backgroundColorSecondary:#E6DACE;
+    --cardBackgroundColor:#F4ECE6;
+    --textColor: #262626;
+    --textColorSecondary: #0050FF;
+}
+
+.indexContainer{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 150px);
+}
+
+.leftSide{
+    background-color: var(--backgroundColorSecondary);
+    width: 50%;
+    height: 100%;
+}
+
+.rightSide{
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonGroup{
+    margin: 20px 0 20px 0;
+}
+
+.resumeBtn{
+    margin-right: 20px;
+    height: 35px;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--textColorSecondary);
+    color: white;
+    font-weight: bold;
+}
+
+.resumeBtn:hover{
+    background-color: var(--backgroundColor);
+    color: var(--textColorSecondary);
+    border: 2px solid var(--textColorSecondary);
+}
+
+.projectsBtn{
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    border:2px solid black;
+    background-color: var(--backgroundColor);
+    font-weight: bold;
+}
+
+.projectsBtn:hover{
+    background-color: var(--textColorSecondary);
+    color: var(--backgroundColor);
+    border: none;
+}
+
+.textDiv{
+    width: 50%;
+}
+
+.card {
+    width: 375px;
+    height: 526px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow:  12px 12px 24px #b0aaa6,
+             -12px -12px 24px #b0aaa6;
+    z-index: 0;
+}
+
+.mainContentCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: var(--cardBackgroundColor);
+    gap: 10px;
+}
+
+.profilePhoto{
+    width: 205px;
+    height: 205px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.socSitesBox{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.socSitesBox> a> svg{
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--textColor);
+    cursor: pointer;
+}
+
+.aboutmeDiv{
+}
+
+@media only screen and (max-device-width:991px) {
+    nav{
+        z-index: 890;
+    }
+    header .responsiveNav {
+		transform: translateY(100vh);
+		z-index: 890;
+	}
+}

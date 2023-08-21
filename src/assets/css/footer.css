@@ -1,0 +1,29 @@
+footer{
+    width: 100%;
+}
+
+.footerContainer{
+    height: 70px;
+    width: 100%;
+    padding: 20px 25px 0 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.contactFooter{
+    display: flex;
+    gap: 30px;
+    
+}
+
+.contactFooter>div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.infoP{
+    font-weight: bold;
+    margin-bottom: 0;
+}

@@ -2,6 +2,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	width: 100%;
 	height: 80px;
 	padding: 0 2rem;
 	background-color: var(--backgroundColor);
@@ -19,26 +20,25 @@ nav a:hover {
 }
 
 header .navBtn{
-    padding: 5px;
 	cursor: pointer;
 	background: transparent;
 	border: none;
 	outline: none;
 	color: var(--textColor);
-	visibility: hidden;
+	display: none;
 	opacity: 0;
 	font-size: 1.8rem;
 }
 
 @media only screen and (max-device-width:991px) {
     header .navBtn{
-		visibility: visible;
+		display: block;
 		opacity: 1;
 	}
 
     header nav {
 		position: fixed;
-		top: -100vh;
+		top: -100%;
 		left: 0;
 		height: 100%;
 		width: 100%;
@@ -52,7 +52,7 @@ header .navBtn{
 	}
 
 	header .responsiveNav {
-		transform: translateY(100vh);
+		transform: translateY(100%);
 		z-index: 890;
 	}
 
@@ -65,4 +65,10 @@ header .navBtn{
 	nav a {
 		font-size: 1.5rem;
 	}
+}
+
+@media only screen and (max-device-width: 425px) {
+    header{
+        padding: 0 1rem;
+    }
 }

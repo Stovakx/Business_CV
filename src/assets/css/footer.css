@@ -27,3 +27,31 @@ footer{
     font-weight: bold;
     margin-bottom: 0;
 }
+
+@media only screen and (max-device-width:625px) {
+    .footerContainer{
+        flex-direction: column;
+    }
+
+    .creator{
+        order: 2;
+        text-align: center;
+    }
+
+    .creator>p{
+        margin-bottom: 6px;
+    }
+
+    .contactFooter{
+        order: 1;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-device-width:425px) {
+    .contactFooter{
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 15px;
+    }
+}

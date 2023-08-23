@@ -1,0 +1,78 @@
+.resumeContainer{
+    height: 100%;
+    width: 100%;
+    background-color: var(--backgroundColor);
+}
+.personalInformations{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 20px 0;
+    text-align: center;
+}
+
+.emailTelephoneDiv{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.experience{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.headerExp{
+    margin: 15px 20px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerExp>h4{
+    font-weight: bold;
+}
+
+.downloadBtn{
+    margin-right: 20px;
+    height: 40px;
+    width: 140px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--textColorSecondary);
+    color: white;
+    font-weight: bold;
+}
+
+.downloadBtn:hover{
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+    border: 2px solid var(--textColorSecondary);
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    margin: 15px auto 30px auto;
+    padding: 20px 15px 20px 15px;
+    border-radius: 20px;
+    background: var(--backgroundColorSecondary);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, 
+    rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+}
+
+.card>.jobInfo{
+    width: 30%;
+}
+
+.card>.jobInfo>h4{
+    font-weight: bold;
+}
+
+.card>.jobInfo>p{
+    font-weight: 600;
+}
+
+.card>.jobDescription{
+    width: 70%;
+    padding-left: 10px;
+}

@@ -1,0 +1,34 @@
+[
+    {
+        "id":1,
+        "title":"junior UI/UX Designer",
+        "company":"Nice Pic s.r.o.",
+        "date":"2015 - 2018",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "skills":["Figma", "Invision", "Time management", "Creativity"]
+    },
+    {
+        "id": 2,
+        "title":"junior web developer",
+        "company":"It is not bug, it is feature",
+        "date":"2018-2019",
+        "description":"sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "skills":["Analytical thinking", "HTML, CSS & Javascript","React", "Communication", "Organization", "Teamwork"]
+    },
+    {
+        "id": 3,
+        "title": "UI/UX Designer",
+        "company": "XYZ Design Studio",
+        "date": "2019 - 2021",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "skills":[]
+    },
+    {
+        "id": 4,
+        "title": "Project manager",
+        "company": "ABC Inc.",
+        "date": "2021 - Present",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "skills": ["Managing project progress", "Organization", "Writing documents", "Communication", "Teamwork", "Time management", "Leadership", "Adaptability", "Critical thinking"]
+    }
+]

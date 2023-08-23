@@ -1,0 +1,10 @@
+.card{
+    width: 73%;
+    height: 367px;
+}
+
+@media only screen and (max-device-width:991) {
+    .card{
+        width: 70%;
+    }
+}

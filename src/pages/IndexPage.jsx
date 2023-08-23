@@ -10,17 +10,17 @@ const IndexPage = ()=>{
     return(
         <div className='indexContainer'>
             <div className='leftSide'></div>
-            <div className='card'>
+            <div className='indexCard'>
                 <div className='mainContentCard'>
                     <img className='profilePhoto' src={ProfilePicture}/>
                     <h4>First name <br/> Last Name</h4>
                     <p>Profesion name</p>
-                </div>
-                <div className='socSitesBox'>
-                    <a href=''><FaLinkedinIn /></a>
-                    <a href=''><FaFacebookSquare /></a>
-                    <a href=''><FaInstagram /></a>
-                    <a href=''><FaTwitterSquare /></a>
+                    <div className='socSitesBox'>
+                        <a href=''><FaLinkedinIn /></a>
+                        <a href=''><FaFacebookSquare /></a>
+                        <a href=''><FaInstagram /></a>
+                        <a href=''><FaTwitterSquare /></a>
+                    </div>
                 </div>
             </div>
             <div className='rightSide'>

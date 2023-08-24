@@ -34,6 +34,7 @@ header .navBtn{
     header .navBtn{
 		display: block;
 		opacity: 1;
+		margin: 0 0 8px;
 	}
 
     header nav {
@@ -58,7 +59,7 @@ header .navBtn{
 
 	nav .navCloseBtn {
 		position: absolute;
-		top: 2rem;
+		top: 1.250rem;
 		right: 2rem;
 	}
 

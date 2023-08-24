@@ -9,6 +9,7 @@ import '../assets/css/cvpage.css';
 const CvPage = ()=>{
     const [jobs, setJobs] = useState([]);
     const [educations, setEducations] = useState([]);
+    const [skills, setSkills] = useState([]);
 
     useEffect(()=>{
         axios.get('/src/data/jobs.json')
@@ -21,6 +22,10 @@ const CvPage = ()=>{
         axios.get('/src/data/education.json')
             .then(response => setEducations(response.data))
             .catch(error => console.error('Error fetching education data:', error));
+
+        axios.get('/src/data/skills.json')
+            .then(response=> setSkills(response.data))
+            .catch(error => console.error('Error fetching skills data:', error));
     }, []);
 
 
@@ -43,8 +48,10 @@ const CvPage = ()=>{
                     <Card key={job.id}>
                         <div className='jobInfo'>
                             <h4>{job.title}</h4>
-                            <p>{job.company}</p>
-                            <p>{job.date}</p>
+                            <div>
+                                <p>{job.company}</p>
+                                <p>{job.date}</p>
+                            </div>
                         </div>
                         <div className='jobDescription'>
                             <p>{job.description}</p>
@@ -61,10 +68,38 @@ const CvPage = ()=>{
                 </div>
                 {educations.map(education =>(
                     <Card key={education.id}>
-                        
+                        <div className="schoolInfo">
+                            <h4>{education.name}</h4>
+                            <div>
+                                <p>{education.degree}</p>
+                                <p>{education.date}</p>
+                                <p>{education.location}</p>
+                            </div>
+                        </div>
+                        <div className='educationDescription'>
+                            <p>{education.description}</p>
+                        </div>
                     </Card>
                 ))}
             </div>
+            <div className='skills'>   
+                <Card>
+                    <div className='skillSet'>
+                        {skills.map((item, index) => (
+                        <div key={index}>
+                            <h3>{Object.keys(item)[0]}</h3>
+                            <ul>
+                                {item[Object.keys(item)[0]].map((skill, skillIndex) => (
+                                <li key={skillIndex}>{skill}</li>
+                                ))}
+                            </ul>
+                        </div>
+                        ))}
+                    </div>
+                </Card>
+
+            </div>
+                    
        </div>
     )
 }

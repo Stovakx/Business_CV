@@ -42,7 +42,6 @@ const IndexPage = ()=>{
                     </p>
                 </div>
             </div>
-
         </div>
     )
 }

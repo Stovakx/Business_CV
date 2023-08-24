@@ -1,7 +1,8 @@
 .resumeContainer{
+    padding: 10px;
     height: 100%;
     width: 100%;
-    background-color: var(--backgroundColor);
+    background-color: var(--backgroundColorSecondary);
 }
 .personalInformations{
     display: flex;
@@ -16,24 +17,24 @@
     gap: 20px;
 }
 
-.experience{
+.experience, .education{
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.headerExp{
-    margin: 15px 20px 20px 20px;
+.headerExp, .headerEducation{
+    width: 73%;
+    margin: 15px auto 20px auto;
     display: flex;
     justify-content: space-between;
 }
 
-.headerExp>h4{
+.headerExp>h4, .headerEducation>h4{
     font-weight: bold;
 }
 
 .downloadBtn{
-    margin-right: 20px;
     height: 40px;
     width: 140px;
     border-radius: 20px;
@@ -55,24 +56,100 @@
     margin: 15px auto 30px auto;
     padding: 20px 15px 20px 15px;
     border-radius: 20px;
-    background: var(--backgroundColorSecondary);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, 
-    rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+    background: var(--backgroundColor);
 }
 
-.card>.jobInfo{
+.card>.jobInfo, .card>.schoolInfo{
     width: 30%;
 }
 
-.card>.jobInfo>h4{
+.card>.jobInfo>h4, .card>.schoolInfo>h4{
     font-weight: bold;
 }
 
-.card>.jobInfo>p{
+.card>.jobInfo>div>p, .card>.schoolInfo>div>p{
     font-weight: 600;
 }
 
-.card>.jobDescription{
+.card>.jobDescription, .card>.educationDescription{
     width: 70%;
     padding-left: 10px;
+}
+
+.skillSet{
+    display: flex;
+}
+.skillSet>div:last-child{
+    border-left: 2px var(--textColorSecondary) solid;
+    margin-left: 30px;
+    padding-left: 10px;
+}
+
+.skillSet>div>ul>li{
+    list-style: none;
+    position: relative;
+    padding-left: 20px;
+}
+
+.skillSet>div>ul>li::before{
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: var(--textColorSecondary);
+    border-radius: 24%;
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+
+
+@media only screen and (max-device-width:899px) {
+    .card{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .card>.jobInfo, .card>.schoolInfo{
+        width: 100%;
+        gap: 40px;
+    }
+
+    .card>.jobInfo>div, .card>.schoolInfo>div{
+        display: flex;
+        gap: 15px;
+    }
+    .card>.jobDescription, .card>.educationDescription{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-device-width:575.98px) {
+    
+    .card{
+        width: 87%;
+    }
+
+}
+
+@media only screen and (max-device-width:500px) {
+    .headerExp, .headerEducation{
+        display: block;
+        text-align: center;
+    }
+
+    .headerExp>a>.downloadBtn{
+        margin: 10px;
+        height: 50px;
+    }
+
+    .skillSet{
+        display: block;
+    }
+
+    .skillSet>div:last-child{
+        margin-left: 0;
+        padding-left: 0;
+        border: none;
+    }
 }

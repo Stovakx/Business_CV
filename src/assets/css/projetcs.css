@@ -1,0 +1,41 @@
+
+.projectsHeader{
+    text-align: center;
+    margin: 35px 0 25px;
+}
+
+.projectsContainer>.card{
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--cardBackgroundColor);
+}
+
+.projectText{
+    padding: 20px 10px 0 30px; 
+}
+
+.projectText{
+    width: 50%;
+}
+
+.projectPhoto{
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+}
+
+.projectPhoto>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-device-width:767.98px) {
+    .projectsContainer>.card{
+        display: block;
+    }
+
+    .projectsContainer>.card>.projectText, .projectsContainer>.card>.projectPhoto{
+        width: 100%;
+    }
+}

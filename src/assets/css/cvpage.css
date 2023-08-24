@@ -124,11 +124,26 @@
     }
 }
 
+@media only screen and (max-device-width:767.98px) {
+    .skillSet{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .skillSet>div:last-child{
+        margin-left: 0;
+        padding-left: 0;
+        border: none;
+    }
+}
+
 @media only screen and (max-device-width:575.98px) {
     
     .card{
         width: 87%;
     }
+
 
 }
 
@@ -143,13 +158,4 @@
         height: 50px;
     }
 
-    .skillSet{
-        display: block;
-    }
-
-    .skillSet>div:last-child{
-        margin-left: 0;
-        padding-left: 0;
-        border: none;
-    }
 }

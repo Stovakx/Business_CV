@@ -17,7 +17,7 @@ const Header = () => {
                 <nav ref={navRef}>
                     <a href='/'>Home</a>
                     <a href='/resume'>Resume</a>
-                    <a href='/projetcs'>Projects</a>
+                    <a href='/projects'>Projects</a>
                     <a href='/contact'>Contact</a>
                     <button className='navCloseBtn navBtn' onClick={showNavbar}>
                         <FaTimes/>

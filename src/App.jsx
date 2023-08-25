@@ -8,8 +8,7 @@ import Footer from './components/Footer';
 import IndexPage from './pages/IndexPage';
 import CvPage from './pages/CvPage';
 import ProjectsPage from './pages/ProjectsPage';
-/*
-import ContactPage from './pages/ContactPage'; */
+import ContactPage from './pages/ContactPage'; 
 
 function App() {
 
@@ -21,8 +20,7 @@ function App() {
           <Route path='/' element={<IndexPage />} />
           <Route path='/resume' element={<CvPage/>}/>
           <Route path='/projects' element={<ProjectsPage/>}/>
-         {/*  
-          <Route path='/contact' element={<ContactPage/>}/> */}
+          <Route path='/contact' element={<ContactPage/>}/> 
         </Routes>
         <Footer/>
       </Router>

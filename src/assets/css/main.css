@@ -19,7 +19,7 @@
     position: relative;
     display: flex;
     width: 100%;
-    min-height: 625px;
+    min-height: calc(100vh - 150px);
 }
 
 .leftSide{

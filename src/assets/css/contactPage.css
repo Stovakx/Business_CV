@@ -1,0 +1,157 @@
+.contactContainer{
+    min-height: calc(100vh - 150px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+    width: 500px;
+    flex-direction: column;
+    gap: 35px;
+    border-radius: 15px;
+    background: var(--backgroundColorSecondary);
+    box-shadow: 16px 16px 32px #c8c8c8,
+        -16px -16px 32px #fefefe;
+    border-radius: 8px;
+}
+
+form>h4{
+    padding-top: 35px;
+}
+
+.inputBox{
+    position: relative;
+    width: 85%;
+}
+
+.inputBox input,
+.inputBox textarea{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: #000;
+    font-size: 1em;
+    background: transparent;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    transition: 0.1s;
+    border-bottom-left-radius: 8px;
+}
+
+textarea{
+    height: 100px;
+}
+
+.inputBox span{
+    margin-top: 5px;
+    position: absolute;
+    left: 0;
+    transform: translateY(-4px);
+    margin-left: 10px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 12px;
+    color: #000;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 3px;
+    border-radius: 8px;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span,
+.inputBox textarea:valid~span,
+.inputBox textarea:focus~span {
+    transform: translateX(90%) translateY(-15px);
+    font-size: 0.8em;
+    padding: 5px 10px;
+    background: #000;
+    letter-spacing: 0.2em;
+    color: #fff;
+    border: 2px;
+}
+
+.inputBox input:valid,
+.inputBox input:focus,
+.inputBox textarea:valid,
+.inputBox textarea:focus{
+    border: 2px solid #000;
+    border-radius: 8px;
+}
+
+.submitEmailForm{
+    font-size: 20px;
+    background: royalblue;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    margin-bottom: 20px;
+}
+
+.submitEmailForm span {
+    display: block;
+    margin-left: 0.3rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.submitEmailForm svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.submitEmailForm:hover .svg-wrapper{
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.submitEmailForm:hover svg{
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.submitEmailForm:hover span {
+    transform: translateX(5em);
+}
+
+.submitEmailForm:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
+}
+
+@media only screen and (max-device-width:575.98px) {
+    form{
+        width: 90vw;
+    }
+
+    .inputBox{
+        width: 85%;
+    }
+
+    .inputBox input:valid~span,
+    .inputBox input:focus~span,
+    .inputBox textarea:valid~span,
+    .inputBox textarea:focus~span{
+        transform: translateX(113px) translateY(-15px);
+    }
+}

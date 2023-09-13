@@ -3,36 +3,36 @@
       "id": 1,
       "title": "Project 1",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec varius libero.",
-      "photo": "src/assets/images/project1.jpg"
+      "photo": "../images/project1.jpg"
     },
     {
       "id": 2,
       "title": "Project 2",
       "description": "Pellentesque ultrices dapibus eros, eu facilisis odio pellentesque vel.",
-      "photo": "src/assets/images/project2.jpg"
+      "photo": "../images/project2.jpg"
     },
     {
       "id": 3,
       "title": "Project 3",
       "description": "Fusce lacinia convallis ante, ac pharetra enim finibus in. Aenean bibendum turpis in lectus aliquam, a cursus nisi luctus.",
-      "photo": "src/assets/images/project3.jpg"
+      "photo": "../images/project3.jpg"
     },
     {
       "id": 4,
       "title": "Project 4",
       "description": "Vestibulum auctor quam at nisi hendrerit, id euismod erat posuere. Sed nec congue urna.",
-      "photo": "src/assets/images/project4.jpg"
+      "photo": "../images/project4.jpg"
     },
     {
       "id": 5,
       "title": "Project 5",
       "description": "Nam gravida nisl a semper dignissim. Vivamus lacinia lectus in ligula lacinia, non scelerisque augue accumsan.",
-      "photo": "src/assets/images/project5.jpg"
+      "photo": "../images/project5.jpg"
     },
     {
       "id": 6,
       "title": "Project 6",
       "description": "Praesent ac tellus ut justo mattis dignissim a id augue. Maecenas in ante sit amet libero sollicitudin bibendum et vel metus.",
-      "photo": "src/assets/images/project6.jpg"
+      "photo": "../images/project6.jpg"
     }
   ]

@@ -9,7 +9,7 @@ const ProjectsPage = ()=>{
     const [projects, setProjects]= useState([])
 
     useEffect(()=>{
-        axios.get('/src/data/projects.json')
+        axios.get('/data/projects.json')
             .then(response => {
                 const sortedProjects = response.data.sort((a, b) => b.id - a.id);
                 setProjects(sortedProjects);

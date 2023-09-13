@@ -1,6 +1,6 @@
 import {FaLinkedinIn, FaInstagram, FaTwitterSquare, FaFacebookSquare } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import ProfilePicture from '../assets/images/profilephoto.jpg';
+import ProfilePicture from '/images/profilephoto.jpg';
 import '../assets/css/main.css';
 
 

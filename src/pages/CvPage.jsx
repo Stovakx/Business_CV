@@ -12,18 +12,18 @@ const CvPage = ()=>{
     const [skills, setSkills] = useState([]);
 
     useEffect(()=>{
-        axios.get('/src/data/jobs.json')
+        axios.get('/data/jobs.json')
             .then(response => {
                 const sortedJobs = response.data.sort((a, b) => b.id - a.id);
                 setJobs(sortedJobs);
             })
             .catch(error => console.error('Error fetching jobs data', error));
 
-        axios.get('/src/data/education.json')
+        axios.get('/data/education.json')
             .then(response => setEducations(response.data))
             .catch(error => console.error('Error fetching education data:', error));
 
-        axios.get('/src/data/skills.json')
+        axios.get('/data/skills.json')
             .then(response=> setSkills(response.data))
             .catch(error => console.error('Error fetching skills data:', error));
     }, []);

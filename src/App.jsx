@@ -14,16 +14,14 @@ function App() {
 
   return (
     <React.StrictMode>
-      <Router>
         <Header/>
-        <Routes>
-          <Route path='/' element={<IndexPage />} />
-          <Route path='/resume' element={<CvPage/>}/>
-          <Route path='/projects' element={<ProjectsPage/>}/>
-          <Route path='/contact' element={<ContactPage/>}/> 
-        </Routes>
+          <Routes>
+            <Route path='/' element={<IndexPage />} />
+            <Route path='/resume' element={<CvPage/>}/>
+            <Route path='/projects' element={<ProjectsPage/>}/>
+            <Route path='/contact' element={<ContactPage/>}/> 
+          </Routes>
         <Footer/>
-      </Router>
     </React.StrictMode>
   )
 }
